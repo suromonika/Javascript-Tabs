@@ -7,7 +7,6 @@ for (var x of container) {
 }
 
 function nextTab(event, id) {
-  //Paslepia ir nuima animacija tabams
   for (var x of container) {
     x.style.display = 'none';
     x.classList.remove('tabAnimation');

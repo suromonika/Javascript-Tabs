@@ -1,0 +1,30 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+
+  div {
+    margin: 15px;
+    padding: 5px;
+    transition: 0.3s;
+    border-radius: 100px;
+  }
+
+  div::after {
+    content: '';
+    background-image: url($img01);
+    background-size: 90px;
+    display: block;
+    width: 90px;
+    height: 90px;
+  }
+  .selected::after {
+    content: '';
+    background-image: url($icon01);
+    background-size: 90px;
+    display: block;
+    width: 90px;
+    height: 90px;
+  }
+}
